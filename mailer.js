@@ -16,7 +16,8 @@ let html = fs.readFileSync('email.html', 'utf8');
 const recipients = [
   { email: 'amit21blr@gmail.com', rid: 'abc123' },
   { email: 'amit7903@outlook.com', rid: 'def456' },
-  { email: 'amitaknkpt@gmail.com', rid: 'ooooooooooooo' }
+  { email: 'amitaknkpt@gmail.com', rid: 'ooooooooooooo' },
+  { email: 'amit.kumar@farmershoptechindia.com', rid: 'ppppppppppp' }
 ];
 
 (async () => {
