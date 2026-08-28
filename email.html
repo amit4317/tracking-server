@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Test Campaign</title>
+<!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<![endif]-->
+<style>
+  body, table, td { margin:0; padding:0; }
+  img { border:0; display:block; }
+  .wrapper { width:100%; background:#f4f4f4; padding:20px 0; }
+  .container { width:600px; max-width:600px; margin:0 auto; background:#ffffff; }
+  .banner { display:block; padding:16px; text-align:center; font-family:Arial, sans-serif; font-size:14px; }
+
+  .outlook-only, .apple-only, .samsung-only, .ogsc-only { display:none !important; }
+
+  <!--[if mso]>
+  .outlook-only { display:block !important; }
+  .apple-only, .samsung-only { display:none !important; }
+  <![endif]-->
+
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-marquee-repetition: infinite) {
+      .apple-only { display:block !important; }
+    }
+  }
+
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (background: -webkit-named-image(i)) {
+      .samsung-only { display:block !important; }
+    }
+  }
+
+  [data-ogsc] .ogsc-only { display:block !important; }
+
+  @media (prefers-color-scheme: dark) {
+    .dark-bg { background:#1a1a1a !important; }
+    .dark-text { color:#ffffff !important; }
+  }
+
+  @media screen and (max-width:600px) {
+    .container { width:100% !important; }
+  }
+</style>
+</head>
+<body class="dark-bg">
+<div class="wrapper">
+  <table role="presentation" class="container" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+      <td class="dark-text" style="padding:24px; font-family:Arial, sans-serif;">
+
+        <h1 style="font-size:20px; margin:0 0 16px;">Hello there</h1>
+        <p style="font-size:14px; line-height:1.5; margin:0 0 16px;">
+          This email adapts its rendering based on your mail client.
+        </p>
+
+        <!--[if mso]>
+        <div class="banner outlook-only" style="background:#dbeafe;">
+          You're viewing this in Outlook (desktop).
+        </div>
+        <img src="https://9d86-2401-4900-1cc4-f19-6501-53e3-2eef-6adb.ngrok-free.app/px?client=outlook&campaign=test1&rid={{RID}}" width="1" height="1" alt="">
+        <![endif]-->
+
+        <div class="banner apple-only" style="background:#dcfce7;">
+          You're viewing this in Apple Mail / iOS.
+        </div>
+        <img class="apple-only" src="https://9d86-2401-4900-1cc4-f19-6501-53e3-2eef-6adb.ngrok-free.app/px?client=apple&campaign=test1&rid={{RID}}" width="1" height="1" alt="" style="display:none;">
+
+        <div class="banner samsung-only" style="background:#fef9c3;">
+          You're viewing this in Samsung Mail.
+        </div>
+        <img class="samsung-only" src="https://9d86-2401-4900-1cc4-f19-6501-53e3-2eef-6adb.ngrok-free.app/px?client=samsung&campaign=test1&rid={{RID}}" width="1" height="1" alt="" style="display:none;">
+
+        <div class="banner ogsc-only" style="background:#fee2e2;">
+          You're viewing this in Outlook.com webmail.
+        </div>
+
+        <!--[if !mso]><!-->
+        <div class="banner" style="background:#e0e7ff; display:block;">
+          Fallback rendering (Gmail / other).
+        </div>
+        <!--<![endif]-->
+
+        <p style="font-size:12px; color:#888; margin-top:24px;">
+          Sent via test campaign.
+        </p>
+
+        <img src="https://9d86-2401-4900-1cc4-f19-6501-53e3-2eef-6adb.ngrok-free.app/px?client=generic&campaign=test1&rid={{RID}}" width="1" height="1" alt="" style="display:block !important; width:1px !important; height:1px !important; border:0 !important;">
+
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

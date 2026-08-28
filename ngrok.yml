@@ -1,0 +1,7 @@
+# traffic-policy.yml
+on_http_request:
+  - actions:
+      - type: add-headers
+        config:
+          headers:
+            ngrok-skip-browser-warning: "true"
